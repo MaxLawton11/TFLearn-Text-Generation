@@ -1,13 +1,14 @@
 import tflearn
 from tflearn.data_utils import *
 from parentdirectory import Constants
+from Constants import *
 
 class Model:
-    def __init__(self, path, maxlen=25, checkpoint_path='model.ckpt', model_path='model.tfl'):
+    def __init__(self, path):
         self.path = path
-        self.maxlen = maxlen
-        self.checkpoint_path = checkpoint_path
-        self.model_path = model_path
+        self.maxlen = Constant_maxlen
+        self.checkpoint_path = Constant_checkpoint_path
+        self.model_path = Constant_model_path
         self.char_idx = None
         self.model = None
     
@@ -28,7 +29,7 @@ class Model:
                                                clip_gradients=5.0,
                                                checkpoint_path=self.checkpoint_path)
     
-    def train_model(self, X, Y, val_split=0.1, batch_size=128, epochs=30, run_id='text_generation'):
+    def train_model(self, X, Y, val_split=0.1, batch_size=128, epochs=Constant_epochs, run_id=Constant_run_id):
         # Train the model
         self.model.fit(X, Y, validation_set=val_split, batch_size=batch_size, n_epoch=epochs, run_id=run_id)
         
