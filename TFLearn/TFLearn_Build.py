@@ -1,7 +1,6 @@
 import tflearn
 from tflearn.data_utils import *
-from TfLearn_Model import *
-from parentdirectory import Constants
+from TFLearn_Model import *
 from Constants import *
 
 m = Model("testdata.txt")

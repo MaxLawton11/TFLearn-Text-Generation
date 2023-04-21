@@ -1,6 +1,5 @@
 import tflearn
 from tflearn.data_utils import *
-from parentdirectory import Constants
 from Constants import *
 
 class Model:
