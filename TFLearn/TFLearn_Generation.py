@@ -1,7 +1,7 @@
 import tflearn
 import tensorflow as tf
 from tflearn.data_utils import *
-import TFLearn_Model
+from TFLearn_Model import *
 from Constants import *
 import sys
 
