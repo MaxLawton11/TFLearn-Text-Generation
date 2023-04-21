@@ -14,6 +14,7 @@ if os.path.getsize("char_idx.pkl") == 0:
 else:
     with open("char_idx.pkl", "rb") as f:
         char_idx = pickle.load(f)
+        print("char_idx : ", char_idx)
 
 """# Load the saved model
 char_idx = None
