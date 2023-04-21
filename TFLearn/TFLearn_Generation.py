@@ -18,9 +18,9 @@ with open("char_idx.pkl", "rb") as f:
     
 #m = Model("testdata.txt")
 
-input_layer = tflearn.input_data(shape=[None, self.maxlen, len(self.char_idx)])
+input_layer = tflearn.input_data(shape=[None, Constant_maxlen, len(char_idx)])
 lstm_layer = tflearn.lstm(input_layer, 256)
-output_layer = tflearn.fully_connected(lstm_layer, len(self.char_idx), activation='softmax')
+output_layer = tflearn.fully_connected(lstm_layer, len(char_idx), activation='softmax')
 net = tflearn.regression(output_layer, optimizer='adam', loss='categorical_crossentropy')
 
 model = tflearn.SequenceGenerator(net)
