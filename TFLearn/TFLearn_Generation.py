@@ -3,8 +3,11 @@ from tflearn.data_utils import *
 from Constants import *
 import sys
 
+import os.path
+
 seed = sys.argv[1]
 
+print("model.tfl : ", os.path.isfile("model.tfl"))
 
 # Load the saved model
 char_idx = None
