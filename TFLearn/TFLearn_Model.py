@@ -38,6 +38,7 @@ class Model:
         
         # Save the final trained model to disk
         self.model.save(os.path.abspath(self.model_path))
+        print("Model saved to:", os.path.abspath(self.model_path))
         
         #save char_idx
         with open("char_idx.pkl", "wb") as f:
