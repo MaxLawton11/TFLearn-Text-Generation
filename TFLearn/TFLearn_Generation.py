@@ -16,10 +16,11 @@ char_idx = None
 with open("char_idx.pkl", "rb") as f:
     char_idx = pickle.load(f)
     
-m = Model("testdata.txt")
-m.load("model.tfl")
+#m = Model("testdata.txt")
+model = tflearn.SequenceGenerator()
+model.load("model.tfl")
 
 
 # Use the loaded model to generate text
-generated_text = m.generate(length=100, temperature=0.5, seq_seed=seed)
+generated_text = model.generate(length=100, temperature=0.5, seq_seed=seed)
 print(generated_text)

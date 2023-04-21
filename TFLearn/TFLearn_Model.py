@@ -45,7 +45,8 @@ class Model:
             pickle.dump(self.char_idx, f)
             
     def load(self, path) :
-        self.model = tflearn.SequenceGenerator.load(path)
+        self.model = tflearn.SequenceGenerator()
+        model.load("my_model.tfl")
     
     def generate_text(self, seed, length=100, temperature=0.5):
         # Generate text
