@@ -37,6 +37,10 @@ class Model:
         
         # Save the final trained model to disk
         self.model.save(self.model_path)
+        
+        #save char_idx
+        with open("char_idx.pkl", "wb") as f:
+            pickle.dump(self.char_idx, f)
     
     def generate_text(self, seed, length=100, temperature=0.5):
         # Generate text

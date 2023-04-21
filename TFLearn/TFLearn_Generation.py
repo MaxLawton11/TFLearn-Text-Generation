@@ -5,6 +5,7 @@ import sys
 
 seed = sys.argv[1]
 
+
 # Load the saved model
 char_idx = None
 with open("char_idx.pkl", "rb") as f:
