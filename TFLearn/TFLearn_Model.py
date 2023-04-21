@@ -1,5 +1,6 @@
 import tflearn
 from tflearn.data_utils import *
+import tensorflow as tf
 import pickle
 from Constants import *
 
@@ -37,8 +38,7 @@ class Model:
         #self.model.save(self.checkpoint_path)
         
         # Save the final trained model to disk
-        self.model.save(os.path.abspath(self.model_path))
-        print("Model saved to:", os.path.abspath(self.model_path))
+        self.model.save(self.model_path)
         
         #save char_idx
         with open("char_idx.pkl", "wb") as f:

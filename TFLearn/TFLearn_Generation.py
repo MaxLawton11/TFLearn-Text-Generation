@@ -11,11 +11,12 @@ seed = sys.argv[1]
 print("model.tfl : ", os.path.isfile("model.tfl"))
 
 # Load the saved model
-model = tf.keras.models.load_model('model.tfl')
 char_idx = None
 with open("char_idx.pkl", "rb") as f:
     char_idx = pickle.load(f)
-model = tflearn.SequenceGenerator(load_path="model.tfl", dictionary=char_idx, seq_maxlen=Constant_maxlen)
+    
+model.load("./model.tfl")
+#model = tflearn.SequenceGenerator(load_path="model.tfl", dictionary=char_idx, seq_maxlen=Constant_maxlen)
 
 # Use the loaded model to generate text
 generated_text = model.generate(length=100, temperature=0.5, seq_seed=seed)
