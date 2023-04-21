@@ -1,6 +1,7 @@
 import tflearn
 import tensorflow as tf
 from tflearn.data_utils import *
+import TFLearn_Model
 from Constants import *
 import sys
 
@@ -15,8 +16,9 @@ char_idx = None
 with open("char_idx.pkl", "rb") as f:
     char_idx = pickle.load(f)
     
-#model.load("model.tfl", weights_only=True)
-model = tflearn.SequenceGenerator(load_path="model.tfl", dictionary=char_idx, seq_maxlen=Constant_maxlen, weights_only=True)
+model = Model()
+model.model.load("model.tfl", weights_only=True)
+
 
 # Use the loaded model to generate text
 generated_text = model.generate(length=100, temperature=0.5, seq_seed=seed)
