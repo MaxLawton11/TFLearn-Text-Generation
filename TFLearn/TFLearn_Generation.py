@@ -17,7 +17,13 @@ with open("char_idx.pkl", "rb") as f:
     char_idx = pickle.load(f)
     
 #m = Model("testdata.txt")
-model = tflearn.SequenceGenerator()
+
+input_layer = tflearn.input_data(shape=[None, self.maxlen, len(self.char_idx)])
+lstm_layer = tflearn.lstm(input_layer, 256)
+output_layer = tflearn.fully_connected(lstm_layer, len(self.char_idx), activation='softmax')
+net = tflearn.regression(output_layer, optimizer='adam', loss='categorical_crossentropy')
+
+model = tflearn.SequenceGenerator(net)
 model.load("model.tfl")
 
 
