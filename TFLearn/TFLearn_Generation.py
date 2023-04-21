@@ -16,10 +16,10 @@ char_idx = None
 with open("char_idx.pkl", "rb") as f:
     char_idx = pickle.load(f)
     
-model = Model()
-model.model.load("model.tfl", weights_only=True)
+m = Model("testdata.txt")
+m.model.load("model.tfl", weights_only=True)
 
 
 # Use the loaded model to generate text
-generated_text = model.generate(length=100, temperature=0.5, seq_seed=seed)
+generated_text = m.generate(length=100, temperature=0.5, seq_seed=seed)
 print(generated_text)
