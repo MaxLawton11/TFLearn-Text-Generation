@@ -17,7 +17,7 @@ with open("char_idx.pkl", "rb") as f:
     char_idx = pickle.load(f)
     
 m = Model("testdata.txt")
-m.model.load("model.tfl", weights_only=True)
+m.load("model.tfl")
 
 
 # Use the loaded model to generate text
