@@ -34,10 +34,10 @@ class Model:
         self.model.fit(X, Y, validation_set=val_split, batch_size=batch_size, n_epoch=epochs, run_id=run_id)
         
         # Save the model checkpoint to disk
-        self.model.save(self.checkpoint_path)
+        #self.model.save(self.checkpoint_path)
         
         # Save the final trained model to disk
-        self.model.save(self.model_path)
+        self.model.save(os.path.abspath(self.model_path))
         
         #save char_idx
         with open("char_idx.pkl", "wb") as f:
