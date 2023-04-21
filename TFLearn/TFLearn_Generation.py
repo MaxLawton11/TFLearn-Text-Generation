@@ -5,16 +5,20 @@ from TFLearn_Model import *
 from Constants import *
 import sys
 
-import os.path
+import os
 
 seed = sys.argv[1]
 
-print("model.tfl : ", os.path.isfile("model.tfl"))
+if os.path.getsize("char_idx.pkl") == 0:
+    print("The dictionary file is empty!")
+else:
+    with open("char_idx.pkl", "rb") as f:
+        char_idx = pickle.load(f)
 
-# Load the saved model
+"""# Load the saved model
 char_idx = None
 with open("char_idx.pkl", "rb") as f:
-    char_idx = pickle.load(f)
+    char_idx = pickle.load(f)"""
     
 #m = Model("testdata.txt")
 
