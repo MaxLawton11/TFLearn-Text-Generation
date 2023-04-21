@@ -10,6 +10,6 @@ m.build_model()
 m.train_model(X, Y)
 
 # Save the trained model
-m.model.save(m.model_path)
+#m.model.save(m.model_path)
 
 print("--Built Model--")

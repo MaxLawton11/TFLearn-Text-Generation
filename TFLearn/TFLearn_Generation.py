@@ -15,7 +15,7 @@ char_idx = None
 with open("char_idx.pkl", "rb") as f:
     char_idx = pickle.load(f)
     
-model.load("./model.tfl")
+model.load("/home/system/ML/TFLearn-Text-Generation/TFLearn/model.tfl")
 #model = tflearn.SequenceGenerator(load_path="model.tfl", dictionary=char_idx, seq_maxlen=Constant_maxlen)
 
 # Use the loaded model to generate text

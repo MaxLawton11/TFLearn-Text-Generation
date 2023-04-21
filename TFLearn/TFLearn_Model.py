@@ -38,7 +38,7 @@ class Model:
         #self.model.save(self.checkpoint_path)
         
         # Save the final trained model to disk
-        self.model.save(self.model_path)
+        self.model.save("model.tfl")
         
         #save char_idx
         with open("char_idx.pkl", "wb") as f:
