@@ -1,7 +1,7 @@
 import tflearn
 from tflearn.data_utils import *
-from TFLearn_Model import *
-from Constants import *
+from TFLearn.TFLearn_Model import *
+from TFLearn.Constants import *
 
 m = Model("testdata.txt")
 X, Y = m.preprocess_data()
