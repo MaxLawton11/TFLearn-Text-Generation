@@ -1,4 +1,5 @@
 import tflearn
+import tensorflow as tf
 from tflearn.data_utils import *
 from Constants import *
 import sys
@@ -10,6 +11,7 @@ seed = sys.argv[1]
 print("model.tfl : ", os.path.isfile("model.tfl"))
 
 # Load the saved model
+model = tf.keras.models.load_model('model.tfl')
 char_idx = None
 with open("char_idx.pkl", "rb") as f:
     char_idx = pickle.load(f)
