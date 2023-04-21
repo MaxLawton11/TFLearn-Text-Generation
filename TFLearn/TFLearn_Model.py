@@ -1,5 +1,6 @@
 import tflearn
 from tflearn.data_utils import *
+import pickle
 from Constants import *
 
 class Model:
