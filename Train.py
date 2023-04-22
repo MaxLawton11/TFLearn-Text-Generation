@@ -3,7 +3,7 @@ from Model import *
 
 #init and train
 m = Model("DataSet.text")
-m.train(30)
+m.train(300)
 
 m.save("model_instance.tflearn")
 
