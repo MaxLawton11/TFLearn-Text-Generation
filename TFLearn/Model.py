@@ -1,4 +1,3 @@
-import string
 import tflearn
 from tflearn.data_utils import *
 
