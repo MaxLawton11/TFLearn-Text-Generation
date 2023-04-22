@@ -19,11 +19,11 @@ class Model(object):
         
     def train(self, n_epoch: int) :
         # Train the model
-        model = tflearn.SequenceGenerator(self.net, dictionary=self.char_idx,
+        self.model = tflearn.SequenceGenerator(self.net, dictionary=self.char_idx,
                                         seq_maxlen=self.maxlen,
                                         clip_gradients=5.0,
                                         checkpoint_path='model.ckpt')
-        model.fit(self.X, self.Y, validation_set=0.1, batch_size=128,
+        self.model.fit(self.X, self.Y, validation_set=0.1, batch_size=128,
                 n_epoch=n_epoch, run_id='text_generation')
         
     def generate(self, seed: str, temperature=0.5) :
