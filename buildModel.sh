@@ -2,4 +2,4 @@
 rm model.ckpt-*
 rm my*
 
-python3 /TFLearn/Train.py
+python3 Train.py
