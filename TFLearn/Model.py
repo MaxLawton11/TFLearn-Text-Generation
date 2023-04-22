@@ -2,7 +2,7 @@ import string
 import tflearn
 from tflearn.data_utils import *
 
-class Model(object):
+class Model:
     def __init__(self, path: str):
         #Load and preprocess the text data
         self.path = path
@@ -26,6 +26,7 @@ class Model(object):
         self.model.fit(self.X, self.Y, validation_set=0.1, batch_size=128,
                 n_epoch=n_epoch, run_id='text_generation')
         
-    def generate(self, seed: str, temperature=0.5) :
+    def generate(self, length: int, seed: str, temperature=0.5) :
         #generate text
-        return self.model.generate(100, temperature = temperature, seq_seed=seed)
+        return self.model.generate(length, temperature = temperature, seq_seed=seed)
+    
