@@ -29,4 +29,3 @@ class Model:
     def generate(self, length: int, seed: str, temperature=0.5) :
         #generate text
         return self.model.generate(length, temperature = temperature, seq_seed=seed)
-    
