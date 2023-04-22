@@ -16,12 +16,13 @@ class Model:
         self.net = tflearn.regression(output_layer, optimizer='adam',
                                 loss='categorical_crossentropy')
         
-    def train(self, n_epoch: int) :
-        # Train the model
         self.model = tflearn.SequenceGenerator(self.net, dictionary=self.char_idx,
                                         seq_maxlen=self.maxlen,
                                         clip_gradients=5.0,
                                         checkpoint_path='model.ckpt')
+        
+    def train(self, n_epoch: int) :
+        # Train the model
         self.model.fit(self.X, self.Y, validation_set=0.1, batch_size=128,
                 n_epoch=n_epoch, run_id='text_generation')
         
