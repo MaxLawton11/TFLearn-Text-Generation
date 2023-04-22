@@ -1,6 +1,6 @@
 # TFLearn Text Generation
 
-<h2>How to run:</h2>
+<h2>How to run (Linux/Bash):</h2>
 <ol type="1">
     <li>
         <strong>Run Following:</strong><br>
