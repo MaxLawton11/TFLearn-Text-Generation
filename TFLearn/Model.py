@@ -30,3 +30,7 @@ class Model:
     def generate(self, length: int, seed: str, temperature=0.5) :
         #generate text
         return self.model.generate(length, temperature = temperature, seq_seed=seed)
+    
+    def save(self, filename: str):
+            # Save the trained model to a file
+        self.model.save(filename)
