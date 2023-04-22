@@ -5,7 +5,7 @@ class Model:
     def __init__(self, path: str):
         #Load and preprocess the text data
         self.path = path
-        self.maxlen = 15
+        self.maxlen = 10
         self.char_idx = None
         self.X, self.Y, self.char_idx = textfile_to_semi_redundant_sequences(self.path, seq_maxlen=self.maxlen, redun_step=1)
 
