@@ -9,7 +9,8 @@ if len(sys.argv) < 3 :
     sys.argv.append(25)
 elif len(sys.argv) < 2 :
     print("Incorrect Arguments")
-    raise "./generate.sh [base] [n_char = 25]"
+    print("./generate.sh [base_text] [n_char = 25]")
+    quit()
 else :
     pass
 
@@ -18,7 +19,7 @@ try :
     str(sys.argv[1])
 except Exception :
     print("Incorrect Arguments")
-    raise "./generate.sh [base] [n_char = 25]"
+    raise "./generate.sh [base_text] [n_char = 25]"
 
 text = m.generate(int(sys.argv[2]), str(sys.argv[1]), 0.5)
 print("Text: ", text)
