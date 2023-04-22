@@ -8,7 +8,7 @@ class Model(object):
         self.path = path
         self.maxlen = 25
         self.char_idx = None
-        X, Y, char_idx = textfile_to_semi_redundant_sequences(self.path, seq_maxlen=self.maxlen, redun_step=1)
+        X, Y, self.char_idx = textfile_to_semi_redundant_sequences(self.path, seq_maxlen=self.maxlen, redun_step=1)
 
         # Define the network architecture
         input_layer = tflearn.input_data(shape=[None, self.maxlen, len(self.char_idx)])
