@@ -8,17 +8,15 @@
         chmod u+x buildModel.sh<br>
         chmod u+x generate.sh<br>
         ./addDependency.sh<br>
-    </li>
+    </li><br>
     <li>
         <strong>Build Model:</strong><br>
         ./buildModel.sh <br>
-    </li>
+    </li><br>
     <li>
         <strong>Generate Text:</strong><br>
         /generate.sh [base_text] [n_char = 25]<br>
         Example: /generate.sh hello 25 <br>
         Example: /generate.sh world 15 <br>
-    </li>
-    <li>
-    </li>
+    </li><br>
 </ol>
