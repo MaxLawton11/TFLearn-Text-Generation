@@ -12,8 +12,8 @@
     </li><br>
     <li>
         <strong>Generate Text:</strong><br>
-        /generate.sh [base_text] [n_char = 25]<br>
-        Example: /generate.sh hello 25 <br>
-        Example: /generate.sh world 15 <br>
+        ./generate.sh [base_text] [n_char = 25]<br>
+        Example: ./generate.sh hello 25 <br>
+        Example: ./generate.sh world 15 <br>
     </li><br>
 </ol>
