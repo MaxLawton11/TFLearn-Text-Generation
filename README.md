@@ -3,10 +3,7 @@
 <h2>How to run (Linux/Bash):</h2>
 <ol type="1">
     <li>
-        <strong>Run Following:</strong><br>
-        chmod u+x addDependency.sh<br>
-        chmod u+x buildModel.sh<br>
-        chmod u+x generate.sh<br>
+        <strong>Add Dependencys:</strong><br>
         ./addDependency.sh<br>
     </li><br>
     <li>
