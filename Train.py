@@ -5,7 +5,7 @@ import os.path
 
 path = "DataSets"
 dir_list = os.listdir(path)
-training_cycles = 30
+training_cycles = 1
 
 print("--------- Training ---------")
 
