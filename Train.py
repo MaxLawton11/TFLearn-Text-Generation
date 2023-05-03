@@ -15,7 +15,7 @@ for path in dir_list :
     else :
         pass
 
-    m.train(300)
+    m.train(30)
     
     m.save("model_instance.tflearn")
     del m
