@@ -25,4 +25,3 @@ for path in dir_list :
     del m
 
 print("--- Model Traind & Saved ---")
-del m
