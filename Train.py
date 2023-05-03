@@ -11,7 +11,7 @@ print("--------- Training ---------")
 
 for path in dir_list :
     #create model
-    print(f"Currently using the {path} dataset")
+    print(f"Currently using the ({path}) dataset")
     m = Model(f"DataSets/{path}")
 
     if os.path.isfile("model_instance.tflearn.index") and  os.path.isfile("model_instance.tflearn.meta") :
