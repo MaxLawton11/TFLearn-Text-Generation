@@ -22,6 +22,7 @@ except Exception :
 import os
 import os.path
 
+path = "DataSets"
 dir_list = os.listdir(path)
 
 print("--------- Generating ---------")
