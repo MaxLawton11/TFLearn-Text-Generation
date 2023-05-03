@@ -8,7 +8,7 @@ dir_list = os.listdir(path)
 
 for path in dir_list :
     #create model
-    m = Model("DataSet.text")
+    m = Model("DataSet/DataSet.text")
 
     if os.path.isfile("model_instance.tflearn.index") and  os.path.isfile("model_instance.tflearn.meta") :
         m.model.load("model_instance.tflearn")
