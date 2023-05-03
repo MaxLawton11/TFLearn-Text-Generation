@@ -5,17 +5,21 @@ import os.path
 
 path = "DataSets"
 dir_list = os.listdir(path)
+training_cycles = 30
+
+print("--------- Training ---------")
 
 for path in dir_list :
     #create model
-    m = Model("DataSets/DataSet.text")
+    print(f"Currently using the {path} dataset")
+    m = Model(f"DataSets/{path}")
 
     if os.path.isfile("model_instance.tflearn.index") and  os.path.isfile("model_instance.tflearn.meta") :
         m.model.load("model_instance.tflearn")
     else :
         pass
 
-    m.train(30)
+    m.train(training_cycles)
     
     m.save("model_instance.tflearn")
     del m
