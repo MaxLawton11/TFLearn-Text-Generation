@@ -4,6 +4,7 @@
 <ol type="1">
     <li>
         <strong>Add Dependencys:</strong><br>
+        Add required dependencies before running Tensorflow training (pip3 modules).
         <em>./addDependency.sh</em><br>
     </li><br>
     <li>
