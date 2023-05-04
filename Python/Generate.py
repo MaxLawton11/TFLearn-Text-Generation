@@ -24,7 +24,7 @@ except Exception :
     raise "./generate.sh [base_text] [n_char = 25]"
 
 
-setsPath = "../Datasets"
+setsPath = "../DataSets"
 dir_list = os.listdir(setsPath)
 
 print("--------- Generating ---------")

@@ -4,7 +4,7 @@ import os
 import os.path
 import sys
 
-setsPath = "../Datasets"
+setsPath = "../DataSets"
 dir_list = os.listdir(setsPath)
 training_cycles = 1
 
