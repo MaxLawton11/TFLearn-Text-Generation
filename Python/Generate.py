@@ -33,7 +33,7 @@ if not dir_list :
     print("No vaild datasets")
     quit()
 
-m = Model(f"{path}/{dir_list[0]}")
+m = Model(f"../{setsPath}/{dir_list[0]}")
 m.model.load("model_instance.tflearn")
 text = m.generate(int(sys.argv[2]), str(sys.argv[1]), 0.5)
 print("Text: ", text)

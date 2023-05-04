@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 Python/Train.py
+python3 Python/BuildDataset.py
