@@ -8,10 +8,10 @@ dir_list = os.listdir(setsPath)
 training_cycles = 1
 
 print("--------- Training ---------")
-
+path_counter = 1
 for path in dir_list :
     #create model
-    print(f"Currently using the ({path}) dataset")
+    print(f"Currently using the ({path}) dataset ｜ {path_counter} of {len(dir_list)}")
     m = Model(f"{setsPath}/{path}")
 
     #load model if there is one
@@ -24,5 +24,6 @@ for path in dir_list :
     
     m.save("model_instance.tflearn")
     del m
+    path_counter = path_counter + 1
 
 print("--- Model Traind & Saved ---")
