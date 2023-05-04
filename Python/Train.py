@@ -5,13 +5,15 @@ import sys
 
 sets_path = "DataSets"
 dir_list = os.listdir(sets_path)
+dir_list_len = len(dir_list)
+
 training_cycles = 1
 
 print("--------- Training ---------")
 path_counter = 1
 for path in dir_list :
     #create model
-    print(f"Currently using the ({path}) dataset ｜ {path_counter} of {len(dir_list)}")
+    print(f"Currently using the ({path}) dataset ｜ {path_counter} of {dir_list_len} ")
     m = Model(f"{sets_path}/{path}")
 
     #load model if there is one
