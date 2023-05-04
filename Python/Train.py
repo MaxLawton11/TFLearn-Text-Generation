@@ -8,11 +8,8 @@ setsPath = "../DataSets"
 #dir_list = os.listdir(setsPath)
 training_cycles = 1
 
-if os.path.exists(setsPath) and os.path.isdir(setsPath):
-    # List the contents of the directory
-    print("PATH TURE!")
-else :
-    print("PATH FALSE!")
+isdir = os.path.isdir(setsPath)
+print(isdir)
 
 print("--------- Training ---------")
 
