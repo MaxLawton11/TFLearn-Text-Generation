@@ -11,6 +11,10 @@ training_cycles = 1
 isdir = os.path.isdir(setsPath)
 print(isdir)
 
+cwd = os.getcwd()
+# Print the current working directory
+print(cwd)
+
 print("--------- Training ---------")
 
 for path in dir_list :
