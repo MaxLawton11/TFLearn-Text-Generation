@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 Generate.py $1 $2
+python3 Python/Generate.py $1 $2
