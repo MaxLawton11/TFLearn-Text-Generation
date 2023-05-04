@@ -3,8 +3,8 @@ import os
 import os.path
 import sys
 
-setsPath = "DataSets"
-dir_list = os.listdir(setsPath)
+sets_path = "DataSets"
+dir_list = os.listdir(sets_path)
 training_cycles = 1
 
 print("--------- Training ---------")
@@ -12,7 +12,7 @@ path_counter = 1
 for path in dir_list :
     #create model
     print(f"Currently using the ({path}) dataset ｜ {path_counter} of {len(dir_list)}")
-    m = Model(f"{setsPath}/{path}")
+    m = Model(f"{sets_path}/{path}")
 
     #load model if there is one
     if os.path.isfile("model_instance.tflearn.index") and  os.path.isfile("model_instance.tflearn.meta") :
