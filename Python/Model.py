@@ -23,7 +23,7 @@ class Model:
         
     def train(self, n_epoch: int) :
         # Train the model
-        self.model.fit(self.X, self.Y, validation_set=0.1, batch_size=64,
+        self.model.fit(self.X, self.Y, validation_set=0.1, batch_size=128,
                 n_epoch=n_epoch, run_id='text_generation')
         
     def generate(self, length: int, seed: str, temperature=0.5) :
