@@ -3,7 +3,7 @@ from Model import *
 import os
 import os.path
 
-path = "DataSets"
+path = "Datasets"
 dir_list = os.listdir(path)
 training_cycles = 1
 
