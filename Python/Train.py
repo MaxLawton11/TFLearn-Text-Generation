@@ -4,16 +4,9 @@ import os
 import os.path
 import sys
 
-setsPath = "../DataSets"
-#dir_list = os.listdir(setsPath)
+setsPath = "DataSets"
+dir_list = os.listdir(setsPath)
 training_cycles = 1
-
-isdir = os.path.isdir(setsPath)
-print(isdir)
-
-cwd = os.getcwd()
-# Print the current working directory
-print(cwd)
 
 print("--------- Training ---------")
 
