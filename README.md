@@ -4,11 +4,12 @@
 <ol type="1">
     <li>
         <strong>Add Dependencys:</strong><br>
-        ./addDependency.sh<br>
+        <strong>./addDependency.sh<br></strong>
     </li><br>
     <li>
-        <strong>Build Model:</strong><br>
-        ./buildModel.sh <br>
+        <strong>Train Model:</strong><br>
+        This will tr
+        ./trainModel.sh <br>
     </li><br>
     <li>
         <strong>Generate Text:</strong><br>
