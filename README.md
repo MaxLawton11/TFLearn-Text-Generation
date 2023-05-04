@@ -13,7 +13,7 @@
     </li><br>
     <li>
         <strong>Generate Text:</strong><br>
-        <em>./generate.sh [base_text] [n_char = 25]</em><br>
+        <em>./generate.sh [base_text] [n_char = 25] </em><br>
         Example: <em>./generate.sh hello 25 </em><br>
         Example: <em>./generate.sh world 15 </em><br>
     </li><br>
