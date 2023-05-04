@@ -1,6 +1,11 @@
 import tensorflow as tf
 from Model import *
+import os
+import os.path
 import sys
+
+#Move back into parent directory
+sys.path.append('..')
 
 if len(sys.argv) < 3 :
     sys.argv.append(25)
@@ -18,12 +23,9 @@ except Exception :
     print("Incorrect Arguments")
     raise "./generate.sh [base_text] [n_char = 25]"
 
-    
-import os
-import os.path
 
-path = "Datasets"
-dir_list = os.listdir(path)
+setsPath = "Datasets"
+dir_list = os.listdir(setsPath)
 
 print("--------- Generating ---------")
 
