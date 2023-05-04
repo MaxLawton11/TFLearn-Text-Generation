@@ -5,7 +5,7 @@ import os.path
 import sys
 
 setsPath = "../DataSets"
-dir_list = os.listdir(setsPath)
+#dir_list = os.listdir(setsPath)
 training_cycles = 1
 
 if os.path.exists(setsPath) and os.path.isdir(setsPath):
