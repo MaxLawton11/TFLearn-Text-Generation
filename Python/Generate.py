@@ -4,9 +4,6 @@ import os
 import os.path
 import sys
 
-#Move back into parent directory
-sys.path.append('..')
-
 if len(sys.argv) < 3 :
     sys.argv.append(25)
 elif len(sys.argv) < 2 :
