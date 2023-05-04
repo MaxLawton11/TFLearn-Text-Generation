@@ -1,4 +1,3 @@
-import tensorflow as tf
 from Model import *
 import os
 import os.path
