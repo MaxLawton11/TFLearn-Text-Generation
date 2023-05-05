@@ -19,6 +19,7 @@
     </li>   
     <li>
         <h2><strong>Generate Text:</strong><br></h2>
+        (Note: Must only pass one word. If anything is separated by a space, you will get errors.) 
         <h4><strong>Command: </strong></h4>
         <em>./generate.sh [base_text] [n_char = 25] </em><br>
         Example: <em>./generate.sh hello </em><br>
