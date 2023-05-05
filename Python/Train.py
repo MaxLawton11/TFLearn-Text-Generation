@@ -9,7 +9,7 @@ training_cycles = 1
 
 if len(sys.argv) < 2 :
     training_cycles = 1
-elif len(sys.argv) > 2 or type(sys.argv[1]) != int or sys.argv[1] < 0:
+elif len(sys.argv) > 2 or not isinstance(sys.argv[1], int) or sys.argv[1] < 1:
     print("Incorrect Argument")
     print("See README.md for usage")
     quit()
