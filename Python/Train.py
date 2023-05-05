@@ -7,16 +7,14 @@ sets_path = "DataSets"
 dir_list = os.listdir(sets_path)
 training_cycles = 1
 
-print(sys.argv)
-
 if len(sys.argv) < 2 :
     training_cycles = 1
-elif len(sys.argv) > 2 or not isinstance(sys.argv[1], int) or sys.argv[1] < 1:
+elif len(sys.argv) > 2 or not isinstance(int(sys.argv[1]), int) or sys.argv[1] < 1:
     print("Incorrect Argument")
     print("See README.md for usage")
     quit()
 else :
-    training_cycles = sys.argv[1]
+    training_cycles = int(sys.argv[1])
 
 print("--------- Training ---------")
 path_counter = 1
