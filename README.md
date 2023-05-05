@@ -21,7 +21,7 @@
         <h2><strong>Generate Text:</strong><br></h2>
         <h4><strong>Command: </strong></h4>
         <em>./generate.sh [base_text] [n_char = 25] </em><br>
-        Example: <em>./generate.sh hello 25 </em><br>
+        Example: <em>./generate.sh hello </em><br>
         Example: <em>./generate.sh world 15 </em><br>
     </li><br>
 </ol>
