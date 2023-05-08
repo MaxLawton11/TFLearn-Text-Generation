@@ -8,8 +8,8 @@ dir_list = os.listdir(sets_path)
 training_cycles = 1
 
 def do_quit() :
-    print("Incorrect Argument")
-    print("See README.md for usage")
+    print("# Incorrect Argument")
+    print("# See README.md for usage")
     quit()
 
 try :
@@ -23,10 +23,11 @@ except :
     do_quit()
 
 print("--------- Training ---------")
+print(f"# Running {training_cycles} epoch(s)")
 path_counter = 1
 for path in dir_list :
     #create model
-    print(f"Currently using the ({path}) dataset ｜ {path_counter} of {len(dir_list)}")
+    print(f"# Currently using the ({path}) dataset ｜ {path_counter} of {len(dir_list)}")
     m = Model(f"{sets_path}/{path}")
 
     #load model if there is one
