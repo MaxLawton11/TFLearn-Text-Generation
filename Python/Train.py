@@ -23,7 +23,7 @@ except :
     do_quit()
 
 print("--------- Training ---------")
-print(f"# Running {training_cycles} epoch(s)")
+print(f"# Running {training_cycles} epoch(s) per dataset")
 path_counter = 1
 for path in dir_list :
     #create model
