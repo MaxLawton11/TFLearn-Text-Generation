@@ -1,3 +1,6 @@
+import tflearn
+from tflearn.data_utils import *
+
 class Model:
     def __init__(self, path: str):        
         # load and preprocess the text data
