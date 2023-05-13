@@ -10,6 +10,12 @@
         <em>./addDependency.sh</em><br>
     </li>
     <li>
+        <h2><strong>Build Dataset:</strong></h2>
+        Run the command below to build the dataset that this code was originally degined for. (Note: When this command is run, everything in the DataSets folder will be deleted!)<br>
+        <h4><strong>Command: </strong></h4>
+        <em>./buildDataset.sh</em><br>
+    </li>
+    <li>
         <h2><strong>Train Model:</strong></h2>
         Will train the model. if one is not present, it will also create one. It will run a default of one epoch, but can be changed through the bash command (see examples below). <br>
         <h4><strong>Command: </strong></h4>
