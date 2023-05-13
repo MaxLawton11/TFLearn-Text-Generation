@@ -28,11 +28,11 @@ print("--------- Training ---------")
 print(f"# Running {training_cycles} epoch(s) per dataset")
 path_counter = 1
 for path in dir_list :
-    #create model
+    # create model
     print(f"# Currently using the ({path}) dataset ｜ {path_counter} of {len(dir_list)}")
     m = Model(f"{sets_path}/{path}")
 
-    #load model if there is one
+    # load model if there is one
     if os.path.isfile("model_instance.tflearn.index") and  os.path.isfile("model_instance.tflearn.meta") :
         m.model.load("model_instance.tflearn")
     else :
