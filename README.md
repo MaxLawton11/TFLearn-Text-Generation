@@ -7,7 +7,7 @@
         <h2><strong>Add Dependencys:</strong></h2>
         Add required dependencies before running Tensorflow training. This will add the required pip3 modules. If pip is unavailable, install the following from your preferred method: numpy, pillow, tflearn, tensorflow. <br>
         <h4><strong>Command: </strong></h4>
-        <em>./addDependency.sh</em><br>
+        <em>`./addDependency.sh`</em><br>
     </li>
     <li>
         <h2><strong>Train Model:</strong></h2>
