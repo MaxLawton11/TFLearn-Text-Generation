@@ -1,3 +1,7 @@
+import warnings
+if True :
+    warnings.filterwarnings("ignore", category=DeprecationWarning, module="tflearn")
+    
 import tflearn
 from tflearn.data_utils import *
 
