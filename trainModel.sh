@@ -1,3 +1,3 @@
 #!/bin/bash
-rm Python/model.ckpt-*
-python3 Python/Train.py
+rm model.ckpt-*
+python3 Python/Train.py $1
