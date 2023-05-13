@@ -35,3 +35,4 @@ text = m.generate(int(sys.argv[2]), str(sys.argv[1]), 0.5)
 print("Text: ", text)
     
 del m
+print("--------- Success ---------")
