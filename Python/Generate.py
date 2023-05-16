@@ -18,6 +18,7 @@ try :
 except Exception :
     print("# Incorrect Arguments")
     raise "# ./generate.sh [base_text] [n_char = 25]"
+    quit()
 
 
 sets_path = "DataSets"
