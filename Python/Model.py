@@ -15,7 +15,7 @@ class Model:
         output_layer = tflearn.fully_connected(lstm_layer, len(self.char_idx), activation='softmax')
         self.net = tflearn.regression(output_layer, optimizer='adam',
                                 loss='categorical_crossentropy')
-        
+        # create the model
         self.model = tflearn.SequenceGenerator(self.net, dictionary=self.char_idx,
                                         seq_maxlen=self.maxlen,
                                         clip_gradients=5.0,
