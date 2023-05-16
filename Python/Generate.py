@@ -3,22 +3,21 @@ import os
 import os.path
 import sys
 
+def do_quit() :
+    print("# Incorrect Argument")
+    print("# See README.md for usage")
+    quit()
+
 if len(sys.argv) < 3 :
     sys.argv.append(25)
 elif len(sys.argv) < 2 :
-    print("# Incorrect Arguments")
-    print("# ./generate.sh [base_text] [n_char = 25]")
-    quit()
+    do_quit()
 else :
-    pass
-
-try :
-    int(sys.argv[2])
-    str(sys.argv[1])
-except Exception :
-    print("# Incorrect Arguments")
-    raise "# ./generate.sh [base_text] [n_char = 25]"
-    quit()
+    try :
+        int(sys.argv[2])
+        str(sys.argv[1])
+    except Exception :
+        do_quit()
 
 
 sets_path = "DataSets"
