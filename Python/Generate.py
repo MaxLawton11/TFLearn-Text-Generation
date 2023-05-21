@@ -30,7 +30,7 @@ if not dir_list :
     quit()
 
 print(f"# Using: {sets_path}/{dir_list[0]}")
-m = Model(f"# Using: {sets_path}/{dir_list[0]}")
+m = Model(f"{sets_path}/{dir_list[0]}")
 m.model.load("model_instance.tflearn")
 text = m.generate(int(sys.argv[2]), str(sys.argv[1]), 0.5)
 print("Text: ", text)
