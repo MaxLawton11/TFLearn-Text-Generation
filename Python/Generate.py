@@ -30,6 +30,7 @@ if not dir_list :
     quit()
 
 print(f"# Using: {sets_path}/{dir_list[0]}")
+print("# Note: If this is not the same dataset the model was traied on, you may get a shape error.")
 m = Model(f"{sets_path}/{dir_list[0]}")
 m.model.load("model_instance.tflearn")
 text = m.generate(int(sys.argv[2]), str(sys.argv[1]), 0.5)
