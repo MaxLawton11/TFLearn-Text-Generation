@@ -18,7 +18,7 @@ else :
 seed = "Ay, this is he that took King Henry's chair,"
 seed = "Ay, this is he that took "
 temp = 0.5
-n_chars = int(sys.argv[1])
+n_chars = 50
 
 # file to run model
 sets_path = 'DataSets'
@@ -35,7 +35,7 @@ m.model.load('model_instance.tflearn')
 
 # make text from seed
 print(m.char_idx)
-text = m.generate(50, seed, temp)
+text = m.generate(n_chars, seed, temp)
 print(f'Seed: "{seed}"')
 print(f'n_chars: "{n_chars}"')
 print('Text: ', text)
