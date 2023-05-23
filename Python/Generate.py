@@ -1,11 +1,10 @@
 from Model import *
 import os
 import os.path
-import sys
 
 seed = "this is he that took King"
 temp = 0.5
-n_chars = 100
+n_chars = 1000
 
 # file to run model
 sets_path = 'DataSets'
