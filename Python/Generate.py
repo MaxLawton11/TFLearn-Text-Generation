@@ -3,7 +3,7 @@ import os
 import os.path
 import sys
 
-seed = "Ay, this is he that took King Henry's chair,"
+seed = "this is he that took King"
 temp = 0.5
 n_chars = 100
 
