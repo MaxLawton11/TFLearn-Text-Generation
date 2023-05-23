@@ -25,10 +25,8 @@
     </li>   
     <li>
         <h2><strong>Generate Text:</strong><br></h2>
-        Curently there is a preset seed, but you can define the number of characters you want generated.
+        Currently will generate 100 characters off a preset seed.
         <h4><strong>Command: </strong></h4>
-        <em>./generate.sh [n_char = 25] </em><br>
-        Example: <em>./generate.sh </em><br>
-        Example: <em>./generate.sh 35 </em><br>
+        <em>./generate.sh </em><br>
     </li><br>
 </ol>
