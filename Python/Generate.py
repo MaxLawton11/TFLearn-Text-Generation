@@ -16,6 +16,7 @@ else :
         print('# See README.md for usage')
 #      "brotherhood in thee no sharper spur"
 seed = "Ay, this is he that took King Henry's chair,"
+seed = "Ay, this is he that took "
 temp = 0.5
 n_chars = int(sys.argv[1])
 
