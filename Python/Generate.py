@@ -3,37 +3,35 @@ import os
 import os.path
 import sys
 
-def do_quit() :
-    print("# Incorrect Argument")
-    print("# See README.md for usage")
-    quit()
-
-if len(sys.argv) < 3 :
+# get the number of chars we want made
+if len(sys.argv) < 2 :
     sys.argv.append(25)
-elif len(sys.argv) < 2 :
-    do_quit()
 else :
     try :
-        int(sys.argv[2])
-        str(sys.argv[1])
+        int(sys.argv[1])
     except Exception :
-        do_quit()
+        print("# Incorrect Argument")
+        print("# See README.md for usage")
 
+seed = "Should be maintain'd, assembled and collected,"
+temp = 0.5
 
+# file to run model
 sets_path = "DataSets"
 dir_list = os.listdir(sets_path)
-
-print("--------- Generating ---------")
-
 if not dir_list :
     print("No vaild datasets")
     quit()
 
+print("--------- Generating ---------")
+# load model
 print(f"# Using: {sets_path}/{dir_list[0]}")
-print("# Note: If this is not the same dataset the model was traied on, you may get a shape error.")
 m = Model(f"{sets_path}/{dir_list[0]}")
 m.model.load("model_instance.tflearn")
-text = m.generate(int(sys.argv[2]), str(sys.argv[1]), 0.5)
+
+# make text from seed
+text = m.generate(int(sys.argv[1]), seed, temp)
+print("Seed: ", seed)
 print("Text: ", text)
     
 del m
