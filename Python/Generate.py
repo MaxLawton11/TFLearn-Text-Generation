@@ -3,7 +3,6 @@ import os
 import os.path
 import sys
 
-print(sys.argv)
 # get the number of chars we want made
 if len(sys.argv) < 2 :
     sys.argv.append(25)
@@ -23,8 +22,6 @@ dir_list = os.listdir(sets_path)
 if not dir_list :
     print("No vaild datasets")
     quit()
-
-print(sys.argv)
 
 print("--------- Generating ---------")
 # load model
