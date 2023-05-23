@@ -34,7 +34,7 @@ m.model.load('model_instance.tflearn')
 
 # make text from seed
 print(m.char_idx)
-text = m.generate(n_chars, seed, temp)
+text = m.generate(50, seed, temp)
 print(f'Seed: "{seed}"')
 print(f'n_chars: "{n_chars}"')
 print('Text: ', text)
