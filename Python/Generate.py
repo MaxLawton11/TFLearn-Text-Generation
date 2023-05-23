@@ -12,8 +12,8 @@ else :
     except Exception :
         print('# Incorrect Argument')
         print('# See README.md for usage')
-
-seed = "brotherhood in thee"
+#      "brotherhood in thee no sharper spur"
+seed = "brotherhood in thee no sharper"
 temp = 0.5
 
 # file to run model
