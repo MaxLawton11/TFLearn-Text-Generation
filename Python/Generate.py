@@ -8,9 +8,9 @@ if len(sys.argv) < 2 :
     sys.argv.append(50)
 else :
     try :
-        int(sys.argv[1])
-        if sys.argv[1] < 50 :
-            sys.argv[1] = 50
+        n_chars = int(sys.argv[1])
+        if n_chars < 50 :
+            n_chars = 50
     except Exception :
         print('# Incorrect Argument')
         print('# See README.md for usage')
@@ -34,8 +34,9 @@ m.model.load('model_instance.tflearn')
 # make text from seed
 #text = m.generate(int(sys.argv[1]), seed, temp)
 print(m.char_idx)
-text = m.generate(25, seed, temp)
+text = m.generate(n_chars, seed, temp)
 print(f'Seed: "{seed}"')
+print(f'n_chars: "{n_chars}"')
 print('Text: ', text)
     
 del m
