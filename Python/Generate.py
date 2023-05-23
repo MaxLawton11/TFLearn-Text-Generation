@@ -13,7 +13,7 @@ else :
         print('# Incorrect Argument')
         print('# See README.md for usage')
 
-seed = "So early walking did I see your son"
+seed = "hello"
 temp = 0.5
 
 # file to run model
