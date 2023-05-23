@@ -3,7 +3,7 @@ import os
 import os.path
 
 seed = "this is he that took King"
-temp = .99
+temp = .5
 n_chars = 1000
 
 # file to run model
