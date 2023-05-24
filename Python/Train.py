@@ -26,7 +26,7 @@ except :
     do_quit()
 
 print('--------- Training ---------')
-print(f'# Running {training_cycles} epoch(s)')
+print(f'# Running {training_cycles} epoch(s) per set')
 for path, path_counter in zip(dir_list,range(1,len(dir_list)+1)) :
     # create model
     print(f'# Currently using the ({path}) dataset ｜ {path_counter} of {len(dir_list)}')
