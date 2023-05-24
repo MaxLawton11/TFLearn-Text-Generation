@@ -27,7 +27,7 @@ except :
 
 print('--------- Training ---------')
 print(f'# Running {training_cycles} epoch(s)')
-for path, path_counter in zip(dir_list,range(1,len(dir_list))) :
+for path, path_counter in zip(dir_list,range(1,len(dir_list)+1)) :
     # create model
     print(f'# Currently using the ({path}) dataset ｜ {path_counter} of {len(dir_list)}')
     m = Model(f'{sets_path}/{path}')
