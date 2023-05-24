@@ -35,8 +35,9 @@ for path, path_counter in zip(dir_list,range(1,len(dir_list)+1)) :
     # load model if there is one
     if os.path.isfile('model_instance.tflearn.index') and os.path.isfile('model_instance.tflearn.meta') :
         m.model.load('model_instance.tflearn')
+        print('# Loaded pre-existing model')
     else :
-        pass
+        print('# No model found - Creating new model')
 
     m.train(training_cycles)
     
