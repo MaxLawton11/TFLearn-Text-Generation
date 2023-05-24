@@ -19,7 +19,7 @@
         <h2><strong>Train Model:</strong></h2>
         Will train the model. if one is not present, it will also create one. It will run a default of one epoch, but can be changed through the bash command (see examples below). <br>
         <h4><strong>Command: </strong></h4>
-        <em>./trainModel.sh [n_epoch = 1] <em><br>
+        <em>./trainModel.sh [n_epoch = 1] </em><br>
         Example: <em>./trainModel.sh </em><br>
         Example: <em>./trainModel.sh 5 </em><br>
     </li>   
